@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой сайт на Bootstrap</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<script src="navbar.js"></script>
+
+<!-- Навигационная панель -->
+<div id="navbar-container"></div>
+
+<!-- Главная секция -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1>Добро пожаловать на мой сайт на Bootstrap</h1>
+        <p class="lead">Простой и адаптивный сайт, созданный с помощью Bootstrap 5</p>
+        <a href="#" class="btn btn-light btn-lg">Узнать больше</a>
+    </div>
+</header>
+
+<!-- Контент секции -->
+<section class="py-5 container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>О нас</h2>
+                <p>Мы команда увлечённых разработчиков, создающих красивые и функциональные сайты.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем услуги веб-разработки, дизайна и цифрового маркетинга для роста вашего бизнеса.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами, чтобы узнать больше о наших услугах и ценах.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service%20img/design.webp" class="card-img-top" alt="Услуга Дизайн бренда и визуальной идентификации">
+                <div class="card-body">
+                    <h5 class="card-title">Дизайн бренда и визуальной идентификации</h5>
+                    <p class="card-text">Создаем уникальные визуальные решения, включая логотипы, фирменные цвета и материалы, которые отражают ценности вашего бренда и привлекают внимание вашей целевой аудитории.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service%20img/razrab.webp" class="card-img-top" alt="Услуга Разработка веб-сайтов и веб-приложений">
+                <div class="card-body">
+                    <h5 class="card-title">Разработка веб-сайтов и веб-приложений</h5>
+                    <p class="card-text">Проектируем и создаем современные, быстрые и адаптивные веб-сайты и приложения, которые соответствуют вашим бизнес-целям и потребностям клиентов.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="service%20img/seo.webp" class="card-img-top" alt="Услуга Интернет-маркетинг и SEO-продвижение">
+                <div class="card-body">
+                    <h5 class="card-title">Интернет-маркетинг и SEO-продвижение</h5>
+                    <p class="card-text">Повышаем видимость вашего сайта и привлекаем целевой трафик с помощью SEO-оптимизации, контент-маркетинга и других стратегий интернет-маркетинга.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <blockquote class="blockquote">
+                <p>"Эта услуга была отличной! Настоятельно рекомендую всем, кто хочет улучшить своё присутствие в интернете."</p>
+                <footer class="blockquote-footer">Джон Доу, <cite title="Название компании">Tech Corp</cite></footer>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="blockquote">
+                <p>"Команда была профессиональной, эффективной и выполнила всё вовремя. Очень доволен!"</p>
+                <footer class="blockquote-footer">Джейн Смит, <cite title="Название компании">Business Co.</cite></footer>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="blockquote">
+                <p>"Превосходные результаты! Они воплотили нашу идею в реальность. Спасибо за прекрасно выполненную работу!"</p>
+                <footer class="blockquote-footer">Алекс Браун, <cite title="Название компании">Creative Solutions</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    В чем ваша основная услуга?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Мы специализируемся на предоставлении услуг веб-разработки и цифрового маркетинга для роста бизнеса.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Сколько времени занимает проект?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Продолжительность проекта зависит от объема и требований. Обычно проекты занимают от 2 до 8 недель.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Вы предоставляете поддержку после завершения проекта?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Да, мы предлагаем пакеты поддержки и обслуживания, чтобы ваш сайт работал стабильно после запуска.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Футер -->
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-0">&copy; 2024 Мой Сайт. Все права защищены.</p>
+    </div>
+</footer>
+
+<!-- Подключение Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
